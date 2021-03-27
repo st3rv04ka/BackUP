@@ -4,7 +4,7 @@ TIME=$(date +"d%d-m%m-y%y-h%H-m%M")
 
 # day month year hours minutes
 
-DIR="./backup"
+DIR="/backup"
 
 # Directory for backups
 
