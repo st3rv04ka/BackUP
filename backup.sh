@@ -26,11 +26,13 @@ mkdir /tmp/$TMP_DIR
 
 # ... Just move the necessary files to a temporary folder ...
 
-
+# example
+# tar czvf /tmp/$TMP_DIR/home.tar.xz /home/user/example.com/public_html
+# mysqldump -u root -p{PASSWORD} db_name > /tmp/$TMP_DIR/home.tar.xz
 
 # ... END ...
 
-cd /tmp/$TMP_DIR && tar czf --absolute-names /$DIR/$TIME.tar.gz . && cd -
+cd /tmp/$TMP_DIR && tar czf /$DIR/$TIME.tar.gz . && cd -
 
 # Ceating a backup!
 
